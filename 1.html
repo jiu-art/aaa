@@ -1,0 +1,62 @@
+
+ 
+
+  
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+ 
+  <title>登录界面</title>
+<style type="text/css">
+	body{
+			background-image: url("h.jpg");
+			background-repeat:  round;
+			background-position:  left top;
+			background-attachment:  fixed;
+		}
+#a {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 250px;
+}
+#a {
+}
+#a #b {
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+<div id="a">
+  <h2 id=b>登录</h2>
+  <label for="username">用户名：</label><input type="text" id="username"><br>
+  <label for="password">密码：</label><input type="password" id="password"><br>
+  <button onclick="login()">登录</button>
+	</div>
+<script>
+    function login() {
+      // 假设正确的用户名是 "admin"，密码是 "123456"
+      const correctUsername = "12345";
+      const correctPassword = "12345";
+
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username === correctUsername && password === correctPassword) {
+        // 登录成功，跳转到新页面（这里假设是 success.html）
+        window.location.href = "1.html";
+      } else {
+        alert("用户名或密码错误！");
+      }
+    }
+  </script>
+</body>
+
+</html>
+ 
+
+ 
